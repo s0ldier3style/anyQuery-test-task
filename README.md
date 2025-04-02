@@ -5,4 +5,4 @@
 
 #### [Макет](https://www.figma.com/file/uBaU2XAC6gZqtshk59mMHL) 
 
-#### [Ссылка на деплой] (https://s0ldier3style.github.io/anyQuery-test-task/)
+#### [Ссылка на деплой](https://s0ldier3style.github.io/anyQuery-test-task/)
