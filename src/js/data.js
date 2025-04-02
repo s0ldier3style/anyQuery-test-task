@@ -1,7 +1,7 @@
 const products = [
   {
     label: "Хит продаж",
-    image: "../svg/cube-shop-card.svg",
+    image: "./svg/cube-shop-card.svg",
     discount: "25%",
     brand: "Бренд",
     title:
