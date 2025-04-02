@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test-catalog</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <header class="header">
+    <div class="header__logo">
+      <div class="header__logo__container">
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 18C1.45 18 0.979 17.8043 0.587 17.413C0.195667 17.021 0 16.55 0 16V2C0 1.45 0.195667 0.979 0.587 0.587C0.979 0.195667 1.45 0 2 0H16C16.55 0 17.021 0.195667 17.413 0.587C17.8043 0.979 18 1.45 18 2V16C18 16.55 17.8043 17.021 17.413 17.413C17.021 17.8043 16.55 18 16 18H2ZM3 14H15L11.25 9L8.25 13L6 10L3 14Z"
+            fill="#73AFF4"
+          />
+        </svg>
+        <p>Логотип</p>
+      </div>
+      <button class="header__button">Каталог</button>
+    </div>
+    <div class="header__search">
+      <svg
+        class="search__icon"
+        width="18"
+        height="18"
+        viewBox="0 0 18 18"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z"
+          fill="#5A5A5A"
+        />
+      </svg>
+
+      <svg
+        class="search-back-arrow"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          opacity="0.3"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0.283445 10.6843C-0.0944816 10.3064 -0.0944816 9.69363 0.283445 9.3157L9.3157 0.283445C9.69363 -0.0944804 10.3064 -0.0944804 10.6843 0.283445C11.0622 0.661371 11.0622 1.27411 10.6843 1.65204L3.30408 9.03226L19.0323 9.03226C19.5667 9.03226 20 9.46553 20 10C20 10.5345 19.5667 10.9677 19.0323 10.9677L3.30408 10.9677L10.6843 18.348C11.0622 18.7259 11.0622 19.3386 10.6843 19.7166C10.3064 20.0945 9.69363 20.0945 9.3157 19.7166L0.283445 10.6843Z"
+          fill="#333333"
+        />
+      </svg>
+
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Поиск по 100 000 товаров"
+      />
+
+      <button class="search-button">Найти</button>
+    </div>
+    <nav class="header__nav">
+      <a href="#">Информация о компании</a>
+      <a href="#">Контакты</a>
+      <a href="#">Полезные ссылки</a>
+    </nav>
+  </header>
+  <body>
+    <main>
+      <aside class="filters">
+        <div>
+          <ul class="filters__category">
+            <li class="filters__category-item">
+              <span class="category-title">
+                <svg
+                  class="arrow-icon"
+                  width="9"
+                  height="16"
+                  viewBox="0 0 9 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.292969 7.29289C-0.0975552 7.68342 -0.0975552 8.31658 0.292969 8.70711L7.29297 15.7071C7.68349 16.0976 8.31666 16.0976 8.70718 15.7071C9.09771 15.3166 9.09771 14.6834 8.70718 14.2929L2.41429 8L8.70718 1.70711C9.09771 1.31658 9.09771 0.683417 8.70718 0.292893C8.31666 -0.0976311 7.68349 -0.0976311 7.29297 0.292893L0.292969 7.29289Z"
+                    fill="#333333"
+                  />
+                </svg>
+
+                Название категории
+              </span>
+              <span class="category-number">3</span>
+            </li>
+            <li class="filters__category-item">
+              <span class="category-title">
+                <svg
+                  class="arrow-icon"
+                  width="9"
+                  height="16"
+                  viewBox="0 0 9 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.292969 7.29289C-0.0975552 7.68342 -0.0975552 8.31658 0.292969 8.70711L7.29297 15.7071C7.68349 16.0976 8.31666 16.0976 8.70718 15.7071C9.09771 15.3166 9.09771 14.6834 8.70718 14.2929L2.41429 8L8.70718 1.70711C9.09771 1.31658 9.09771 0.683417 8.70718 0.292893C8.31666 -0.0976311 7.68349 -0.0976311 7.29297 0.292893L0.292969 7.29289Z"
+                    fill="#333333"
+                  />
+                </svg>
+
+                Название категории
+              </span>
+              <span class="category-number">3</span>
+            </li>
+            <li class="filters__category-item">
+              <span class="category-title">
+                <svg
+                  class="arrow-icon"
+                  width="9"
+                  height="16"
+                  viewBox="0 0 9 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.292969 7.29289C-0.0975552 7.68342 -0.0975552 8.31658 0.292969 8.70711L7.29297 15.7071C7.68349 16.0976 8.31666 16.0976 8.70718 15.7071C9.09771 15.3166 9.09771 14.6834 8.70718 14.2929L2.41429 8L8.70718 1.70711C9.09771 1.31658 9.09771 0.683417 8.70718 0.292893C8.31666 -0.0976311 7.68349 -0.0976311 7.29297 0.292893L0.292969 7.29289Z"
+                    fill="#333333"
+                  />
+                </svg>
+
+                Название категории
+              </span>
+              <span class="category-number">3</span>
+            </li>
+            <li class="filters__category-item">
+              <span class="category-title">
+                <svg
+                  class="arrow-icon"
+                  width="9"
+                  height="16"
+                  viewBox="0 0 9 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.292969 7.29289C-0.0975552 7.68342 -0.0975552 8.31658 0.292969 8.70711L7.29297 15.7071C7.68349 16.0976 8.31666 16.0976 8.70718 15.7071C9.09771 15.3166 9.09771 14.6834 8.70718 14.2929L2.41429 8L8.70718 1.70711C9.09771 1.31658 9.09771 0.683417 8.70718 0.292893C8.31666 -0.0976311 7.68349 -0.0976311 7.29297 0.292893L0.292969 7.29289Z"
+                    fill="#333333"
+                  />
+                </svg>
+
+                Название категории
+              </span>
+              <span class="category-number">3</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="filters__price">
+          <div class="filters__box">
+            <span class="filters__subtitle">Цена</span>
+            <button class="filters__clear-button">Очистить</button>
+          </div>
+
+          <div class="filters__price-range">
+            <div class="filters__price-range-box">
+              <span>от</span>
+              <input type="number" class="price__value" data-suffix="$" />
+            </div>
+            <div class="line"></div>
+            <div class="filters__price-range-box">
+              <span>до</span>
+              <input type="number" class="price__value" />
+            </div>
+          </div>
+        </div>
+
+        <div class="filters__brand">
+          <div class="filters__box">
+            <span class="filters__subtitle">Бренд</span>
+            <button class="filters__clear-button">Очистить</button>
+          </div>
+          <div class="filters__brand-search">
+            <svg
+              class="search-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g opacity="0.3">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.33333 2.75C4.80203 2.75 2.75 4.80203 2.75 7.33333C2.75 9.86464 4.80203 11.9167 7.33333 11.9167C9.86464 11.9167 11.9167 9.86464 11.9167 7.33333C11.9167 4.80203 9.86464 2.75 7.33333 2.75ZM1.25 7.33333C1.25 3.9736 3.9736 1.25 7.33333 1.25C10.6931 1.25 13.4167 3.9736 13.4167 7.33333C13.4167 10.6931 10.6931 13.4167 7.33333 13.4167C3.9736 13.4167 1.25 10.6931 1.25 7.33333Z"
+                  fill="#333333"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.5693 10.5698C10.8622 10.2769 11.337 10.2769 11.6299 10.5698L14.5299 13.4698C14.8228 13.7627 14.8228 14.2375 14.5299 14.5304C14.237 14.8233 13.7622 14.8233 13.4693 14.5304L10.5693 11.6304C10.2764 11.3375 10.2764 10.8627 10.5693 10.5698Z"
+                  fill="#333333"
+                />
+              </g>
+            </svg>
+
+            <input
+              type="text"
+              placeholder="Поиск"
+              class="filters__brand-input"
+            />
+
+            <button class="filters__clear-icon">
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M17.3337 9.00008C17.3337 13.6025 13.6027 17.3334 9.00033 17.3334C4.39795 17.3334 0.666992 13.6025 0.666992 9.00008C0.666992 4.39771 4.39795 0.666748 9.00033 0.666748C13.6027 0.666748 17.3337 4.39771 17.3337 9.00008ZM12.0896 7.08934C12.415 6.7639 12.415 6.23626 12.0896 5.91083C11.7641 5.58539 11.2365 5.58539 10.9111 5.91083L9.00033 7.82157L7.08958 5.91083C6.76414 5.58539 6.23651 5.58539 5.91107 5.91083C5.58563 6.23626 5.58563 6.7639 5.91107 7.08934L7.82181 9.00008L5.91107 10.9108C5.58563 11.2363 5.58563 11.7639 5.91107 12.0893C6.23651 12.4148 6.76414 12.4148 7.08958 12.0893L9.00033 10.1786L10.9111 12.0893C11.2365 12.4148 11.7641 12.4148 12.0896 12.0893C12.415 11.7639 12.415 11.2363 12.0896 10.9108L10.1788 9.00008L12.0896 7.08934Z"
+                  fill="#CBCBCB"
+                />
+              </svg>
+            </button>
+            <button class="filters__search-button">Найти</button>
+          </div>
+          <ul class="filters__attributes">
+            <li class="filters__item">
+              <input type="checkbox" /><span>Атрибут</span>
+            </li>
+            <li class="filters__item">
+              <input type="checkbox" /><span>Атрибут</span>
+            </li>
+            <li class="filters__item">
+              <input type="checkbox" /><span>Атрибут</span>
+            </li>
+            <li class="filters__item">
+              <input type="checkbox" /><span>Атрибут</span>
+            </li>
+            <li class="filters__item">
+              <input type="checkbox" /><span>Атрибут</span>
+            </li>
+            <li class="filters__item">
+              <input type="checkbox" /><span>Атрибут</span>
+            </li>
+            <li class="filters__item">
+              <input type="checkbox" /><span>Атрибут</span>
+            </li>
+            <li class="filters__item">
+              <input type="checkbox" /><span>Атрибут</span>
+            </li>
+            <li class="filters__item">
+              <input type="checkbox" /><span>Атрибут</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="filters__size">
+          <div class="filters__box">
+            <span class="filters__subtitle">Размер</span>
+            <button class="filters__clear-button">Очистить</button>
+          </div>
+          <ul class="filters__attributes">
+            <li class="filters__item">
+              <input type="checkbox" /><span>Атрибут</span>
+            </li>
+            <li class="filters__item">
+              <input type="checkbox" /><span>Атрибут</span>
+            </li>
+            <li class="filters__item">
+              <input type="checkbox" /><span>Атрибут</span>
+            </li>
+            <li class="filters__item">
+              <input type="checkbox" /><span>Атрибут</span>
+            </li>
+            <li class="filters__item">
+              <input type="checkbox" /><span>Атрибут</span>
+            </li>
+            <li class="filters__item">
+              <input type="checkbox" /><span>Атрибут</span>
+            </li>
+            <li class="filters__item">
+              <input type="checkbox" /><span>Атрибут</span>
+            </li>
+            <li class="filters__item">
+              <input type="checkbox" /><span>Атрибут</span>
+            </li>
+            <li class="filters__item">
+              <input type="checkbox" /><span>Атрибут</span>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="product__card__section">
+        <h3 class="product__card__section-category">Название категории</h3>
+        <div class="product__card__section-list">
+          <div class="product__card">
+            <div class="product__card__top">
+              <span class="product__card__label"
+                >Хит продаж
+                <img class="" src="./svg/fire.svg" alt="Хит продаж" />
+              </span>
+              <img
+                class="product__card__image"
+                src="./svg/cube-shop-card.svg"
+                alt="Изображение товара"
+              />
+              <span class="product__card__discount">25%</span>
+            </div>
+
+            <div class="product__card__info">
+              <span class="product__card__brand">Бренд</span>
+              <p class="product__card__title">
+                Полное название товара в несколько строк для вида с обрывом в
+                конце...
+              </p>
+
+              <div class="product__card__prices">
+                <span class="product__card__price">5 990 ₽</span>
+                <span class="product__card__old-price">5 990 ₽</span>
+              </div>
+            </div>
+            <button class="product__card__button">Купить</button>
+          </div>
+
+          <div class="product__card out-of-stock">
+            <div class="product__card__top">
+              <span class="product__card__label"
+                >Хит продаж
+                <img class="" src="./svg/fire.svg" alt="Хит продаж" />
+              </span>
+              <img
+                class="product__card__image"
+                src="./svg/cube-shop-card.svg"
+                alt="Изображение товара"
+              />
+              <span class="product__card__discount">25%</span>
+            </div>
+
+            <div class="product__card__info">
+              <span class="product__card__brand">Бренд</span>
+              <p class="product__card__title">
+                Полное название товара в несколько строк для вида с обрывом в
+                конце...
+              </p>
+
+              <div class="product__card__prices">
+                <span class="product__card__price">5 990 ₽</span>
+                <span class="product__card__old-price">5 990 ₽</span>
+              </div>
+            </div>
+            <button class="product__card__button">
+              Сообщить о поступлении
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>
