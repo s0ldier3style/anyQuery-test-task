@@ -47,7 +47,8 @@ input[type=text]:focus {
   outline: none;
 }
 
-input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -73,25 +74,25 @@ body::-webkit-scrollbar-thumb {
 
 @font-face {
   font-family: "Inter";
-  src: url("./fonts/Inter/Inter_18pt-Medium.woff2") format("woff2"), url("./fonts/Inter/Inter_18pt-Medium.ttf") format("truetype");
+  src: url("../fonts/Inter/Inter_18pt-Medium.woff2") format("woff2") url("../fonts/Inter/Inter_18pt-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: url("./fonts/Inter/Inter_18pt-Medium.woff2") format("woff2"), url("./fonts/Inter/Inter_18pt-Medium.ttf") format("truetype");
+  src: url("../fonts/Inter/Inter_18pt-Medium.woff2") format("woff2"), url("../fonts/Inter/Inter_18pt-Medium.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "PT Sans";
-  src: url("./fonts/PTSans/PTSans-Regular.woff2") format("woff2"), url("./fonts/PTSans/PTSans-Regular.ttf") format("truetype");
+  src: url("../fonts/PTSans/PTSans-Regular.woff2") format("woff2"), url("../fonts/PTSans/PTSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "PT Sans";
-  src: url("./fonts/PTSans/PTSans-Bold.woff2") format("woff2"), url("./fonts/PTSans/PTSans-Bold.ttf") format("truetype");
+  src: url("../fonts/PTSans/PTSans-Bold.woff2") format("woff2"), url("../fonts/PTSans/PTSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -135,6 +136,8 @@ body::-webkit-scrollbar-thumb {
   background: #fff;
   border-radius: 10px;
   padding: 15.5px 24px;
+  font-family: "Inter";
+  font-weight: 500;
 }
 .header__button:hover {
   background: #E2EFFF;
@@ -189,7 +192,7 @@ body::-webkit-scrollbar-thumb {
 }
 .header__search .search-button {
   right: 10px;
-  background-color: #73AFF4;
+  background-color: #73aff4;
   color: white;
   border: none;
   padding: 8px 16px;
@@ -209,10 +212,10 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   font-size: 18px;
   margin-right: 10px;
-  color: #5A5A5A;
+  color: #5a5a5a;
 }
 .header .search-button {
-  background-color: #73AFF4;
+  background-color: #73aff4;
   color: white;
   border: none;
   padding: 8px 16px;
@@ -421,7 +424,7 @@ body::-webkit-scrollbar-thumb {
 .filters__brand .filters__brand-search .filters__search-button {
   position: absolute;
   right: 5px;
-  background-color: #73AFF4;
+  background-color: #73aff4;
   color: white;
   border: none;
   padding: 6px 12px;
