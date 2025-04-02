@@ -1,0 +1,79 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  color: unset;
+  text-decoration: unset;
+  list-style-type: none;
+  position: relative;
+  line-height: normal;
+}
+
+body {
+  width: 100%;
+  font-family: "Inter";
+  color: $color-font-main;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  margin: 24px auto;
+  padding: 12px clamp(10px, 6vw, 100px);
+  display: flex;
+  gap: 35px;
+}
+
+@media (max-width: 375px) {
+  main {
+    margin: auto;
+    padding: 0 16px;
+  }
+}
+
+input[type="text"] {
+  &:hover {
+    border: 1px solid $color-input-hover;
+  }
+
+  &:active {
+    border: 1px solid $color-input-hover;
+  }
+
+  &:focus {
+    border-color: $color-input-hover;
+    box-shadow: 0 0 5px $color-input-hover;
+    outline: none;
+  }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.search-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #888;
+  z-index: 1;
+}
+
+body::-webkit-scrollbar {
+  width: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $scroll-bar;
+  border-radius: 10px;
+}

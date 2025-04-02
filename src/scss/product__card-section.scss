@@ -1,0 +1,39 @@
+.product__card__section {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+
+  &-category {
+    display: none;
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .product__card__section {
+    flex-direction: column;
+
+    &-category {
+      display: block;
+      text-align: center;
+      font-size: 22px;
+      align-self: flex-start;
+      font-weight: normal;
+      margin-inline-start: 8px;
+      font-family: "PT Sans";
+    }
+
+    &-list {
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 12px;
+    }
+  }
+}

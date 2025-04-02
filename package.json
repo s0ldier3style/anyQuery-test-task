@@ -1,0 +1,23 @@
+{
+  "name": "test-task-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server src",
+    "sass": "sass --source-map-urls=relative --watch src/scss/main.scss:src/main.css",
+    "prefix": "postcss src/main.css --use autoprefixer -o src/main.css",
+    "deploy": "gh-pages -d src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
+    "live-server": "^1.2.2",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.85.1"
+  },
+  "description": ""
+}
